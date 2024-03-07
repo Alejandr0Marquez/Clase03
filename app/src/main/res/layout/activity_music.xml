@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicActivity">
+
+    <TextView
+        android:id="@+id/txtMusic_titulo"
+        android:layout_width="231dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imvMusic_album"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imvMusic_album"
+        android:layout_width="wrap_content"
+        android:layout_height="477dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="168dp"
+        app:srcCompat="@color/design_default_color_primary" />
+
+    <SeekBar
+        android:id="@+id/sbrMusic_tiempo"
+        android:layout_width="289dp"
+        android:layout_height="28dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/txtMusic_tiempo"
+        android:layout_width="55dp"
+        android:layout_height="21dp"
+        android:layout_above="@+id/sbrMusic_tiempo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:id="@+id/txtMusic_duracion"
+        android:layout_width="55dp"
+        android:layout_height="21dp"
+        android:layout_above="@+id/sbrMusic_tiempo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="317dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/txtMusic_cancion"
+        android:layout_width="163dp"
+        android:layout_height="32dp"
+        android:layout_above="@+id/sbrMusic_tiempo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="5dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="363dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imbAdelante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_previous" />
+
+        <ImageButton
+            android:id="@+id/imbPausa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_play" />
+
+        <ImageButton
+            android:id="@+id/imbReproducir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_pause" />
+
+        <ImageButton
+            android:id="@+id/imbRetroceder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_media_next" />
+    </LinearLayout>
+</RelativeLayout>
